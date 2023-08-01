@@ -23,12 +23,12 @@
                         </thead>
                         <tbody>
                             <row>
-                                <entry><codeph>polaris.serverUrl</codeph></entry>
+                                <entry><codeph>polaris.serverurl</codeph></entry>
                                 <entry>string</entry>
                                 <entry>Polaris Server URL</entry>
                             </row>
                             <row>
-                                <entry><codeph>polaris.accessToken</codeph></entry>
+                                <entry><codeph>polaris.accesstoken</codeph></entry>
                                 <entry>string</entry>
                                 <entry>Offline access token, used for authentication with Polaris
                                     service APIs.</entry>
