@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ws3_kg4_cyb">
+    <title>Additional GitHub Configuration</title>
+    <body>
+        <p>The following parameters can be used for Polaris, Black Duck or Coverity Connect. <ul
+                id="ul_yf1_5mz_nxb">
+                <li><codeph>synopsys_bridge_path</codeph>: Provides a path to Synopsys Bridge.
+                        <note>If you don't provide any path, then the configuration path defaults to
+                            <codeph>$HOME/synopsys-bridge</codeph>. If the configured Synopsys
+                        Bridge is not the latest one, the latest Synopsys Bridge version will be
+                        downloaded.</note></li>
+                <li><codeph>bridge_download_url</codeph>: Provides a URL to the Synopsys Bridge zip
+                    file. If provided, Synopsys Bridge is automatically downloaded and
+                        configured.<note>If <codeph>bridge_download_version</codeph> or
+                            <codeph>bridge_download_url</codeph> are not provided, Synopsys GitHub
+                        Action downloads and configures the latest version of Bridge.</note></li>
+                <li><codeph>bridge_download_version</codeph>: Provide the Synopsys Bridge version.
+                    If provided, the specified version of Synopsys Bridge will be automatically
+                    downloaded and configured.</li>
+                <li><codeph>include_diagnostics</codeph>: Pass <codeph>true</codeph> to upload
+                    Synopsys Bridge diagnostic files. Additionally,
+                        <codeph>diagnostics_retention_days</codeph> can be passed as integer value
+                    between 1 to 90 to retain the files (default is 90 days).</li>
+            </ul></p>
+    </body>
+</topic>
