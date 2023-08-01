@@ -3,7 +3,8 @@
 <topic id="topic_chr_mtw_cyb">
     <title>GitLab Prerequisites</title>
     <body>
-        <p>Before configuring Synopsys Template into your GitLab pipeline, set up the following.</p>
+        <p>Before configuring Synopsys Template into your GitLab pipeline, you must meet the
+            following prerequisites.</p>
         <section id="section_izv_t2h_2yb">
             <title>GitLab Runner Setup</title>
             <p>
@@ -13,7 +14,7 @@
                         maintainer or owner role for the project.</li>
                     <li>A GitLab runner can be self-managed or SaaS runners managed by GitLab.</li>
                     <li>A GitLab self-managed runner can be installed and used on GNU/Linux, macOS
-                        and Windows. For more details refer: <xref
+                        and Windows. For more details refer to: <xref
                             href="https://docs.gitlab.com/runner/install/" format="html"
                             scope="external">Install GitLab Runner</xref></li>
                     <li>To set up project specific self-managed runner, go to (<b>Project
@@ -36,7 +37,7 @@
                         self-managed GitLab instances only). </li>
                     <li>To add variables, go to <b>Settings</b> → <b>CI/CD</b> → <b>Variables</b>.
                         Be sure to mask passwords and tokens to avoid them being exposed in logs.
-                        For more details see <xref href="https://docs.gitlab.com/ee/ci/variables"
+                        For more details, see <xref href="https://docs.gitlab.com/ee/ci/variables"
                             format="html" scope="external">GitLab CI/CD variables</xref>.</li>
                 </ul>
             </p>
@@ -48,17 +49,17 @@
                     <li><codeph>BRIDGE_GITLAB_USER_TOKEN</codeph> is required as input when running
                         Black Duck Fix PR, Black Duck/Coverity PR Comment.</li>
                     <li>Generate a Personal Access Token (PAT) from GitLab (<b>User Settings</b>
-                            →<b> Access Tokens</b>) and store it as secret variable or store and
-                        fetch it from vault. </li>
+                            →<b> Access Tokens</b>) and store it as a secret variable or store and
+                        fetch it from the vault. </li>
                     <li>PAT must have <b>api</b> scope to perform Black Duck Fix PR or Black
-                        Duck/Coverity PR Comment. For more details, see: <xref
+                        Duck/Coverity PR Comment. For more details, see <xref
                             href="https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html"
-                            format="html" scope="external">Personal access tokens</xref></li>
+                            format="html" scope="external">Personal access tokens</xref>.</li>
                 </ul>
             </p>
         </section>
         <section id="section_ddv_nlh_2yb">
-            <title>Create a .gitlab-ci.yml file</title>
+            <title>Create a <codeph>.gitlab-ci.yml</codeph> file</title>
             <p>
                 <ul id="ul_bhm_qlh_2yb">
                     <li>Before running a pipeline using the Synopsys Template, add a
